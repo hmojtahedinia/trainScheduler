@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light" id="navbar">
+            <a href="https://hmojtahedinia.github.io/Basic-Portfolio/">About</a>
+            <a href="https://hmojtahedinia.github.io/Basic-Portfolio/portfolio.html">Portfolio</a>
+            <a href="https://hmojtahedinia.github.io/Basic-Portfolio/contact.html">Contact</a>
+        </nav>
+    </div>
+
+
+    <div class="container">
+
+        <br>
+
+        <!-- Jumbotron Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">Anytime is Train Time</h1>
+            <h3 class="text-center" id="choo">choo choo chi chi</h3>
+        </div>
+
+        <div class="row" id="first">
+            <div class="col-lg-12">
+                <div id="currentTrainSchedule">
+                    <p>Current Train Schedule</p>
+                    <table class="table table-dark" id="table1">
+
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Input fields -->
+
+        <div class="row" id="second">
+            <div class="col-lg-12">
+                <div>
+                    <p>Add Train</p>
+                    <form>
+                        <div class="form-group">
+                            <label>Train name</label>
+                            <input type="text" class="form-control" id="trainName">
+                        </div>
+                        <div class="form-group">
+                            <label>Destination</label>
+                            <input type="text" class="form-control" id="destination">
+                        </div>
+                        <div class="form-group">
+                            <label>First train time(HH:mm - military time)</label>
+                            <input type="text" class="form-control" id="firstTrainTime">
+                        </div>
+                        <div class="form-group">
+                            <label>Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequency">
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary" id="buttonSubmit">Submit</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <script src="logicTrainScheduler.js"></script>
+
+</body>
+
+</html>

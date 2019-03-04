@@ -1,0 +1,52 @@
+
+ .navbar-light {
+    text-align: left;
+    color: white;
+    font-family: serif;
+    font-size: 1em;
+    background-color: rgba(219, 63, 63, 0.856);
+    color: aliceblue;
+    width: 25%;
+    text-decoration: none;
+    font-weight: bold;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: rgb(223, 223, 220);
+}
+
+a.highlight:hover {
+    color: bisque;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#choo{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#first {
+    border: 3px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+#second {
+    border: 3px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
